@@ -1,0 +1,52 @@
+<header class="top">
+	<nav class="nav_bottom"></nav>
+	<nav class="nav_top">
+		<div class="navli">
+			<a href="#/current" class="action">首页</a>
+			<a href="#/place">全国天气</a>
+			<a href="#">国际天气</a>
+			<a href="#">更多</a>
+		</div>
+	</nav>
+	<div ng-show=!onOff id="wait">
+		<img src="image/l.png" alt="">
+	</div>
+	<div ng-show=onOff>
+		<section class="city">
+			<div class="cityname">
+				<span>{{data.basic.city}}天气|</span>
+				<p>2小时前更新</p>
+			</div>
+			<a>对比本地时间 ></a>
+		</section>
+		<p class="rain">{{data.now.cond.txt}}</p>
+		<div class="tem">
+			<span>{{data.now.tmp}}°</span>
+			<div>
+				<i>{{data.daily_forecast[0].tmp.min}}-{{data.daily_forecast[0].tmp.max}}°</i>
+				<p>{{data.now.wind.dir}} {{data.daily_forecast[0].wind.sc}}级 湿度{{data.now.hum}}%</p>
+			</div>
+		</div>
+		<p class="times">{{month}}月{{day}}日 {{week}}</p>
+	</div>
+	<form action="" class="form1">
+		<input type="text" placeholder="请输入地方名称" id="city">
+		<button ng-click="search()">搜索</button>
+	</form>
+</header>
+<div class="view">
+	<section class="week" ng-repeat="news in daily">
+		<div>
+			<p>{{news.date}}</p>
+			<img src="image/{{news.cond.txt_d}}.png" alt="">
+			<p>{{news.cond.txt_d}}</p>
+			<p class="one">{{news.wind.sc}}{{news.wind.spd}}级</p>
+		</div>
+	</section>
+	<canvas id="myCanvas"></canvas>
+</div>
+<article ng-show=onOff>
+	<h3>{{data.suggestion.comf.brf}} : <span>{{data.suggestion.comf.txt}}</span></h3>
+	<h3>{{data.suggestion.cw.brf}} : <span>{{data.suggestion.cw.txt}}</span></h3>
+	<h3>{{data.suggestion.uv.brf}} : <span>{{data.suggestion.uv.txt}}</span></h3>
+</article>

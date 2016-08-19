@@ -1,0 +1,103 @@
+html,body,img,a,p,h3,article{margin:0;padding:0;}
+body{font-size:2em;font-family:"微软雅黑";}
+html,body{width:100%;height:100%;}
+body.add{background:#efefef;}
+a{text-decoration:none;}
+i{font-style:normal;}
+.clear:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+/*首页*/
+.top{width:100%;height:688px;background:url(../image/bj.png) no-repeat;position:relative;}
+.top nav{width:100%;height:92px;}
+.nav_bottom{opacity:.5;background:#fff;}
+.nav_top{position:absolute;top:0;left:0;background:url(../image/logo.png) 20px center no-repeat;}
+.nav_top a{color:#000;padding:27px;}
+.navli{float:right;height:92px;line-height:92px;margin-right:16px;}
+.navli .action{background:#000;opacity:.2;color:#fff;}
+.city{width:100%;height:140px;padding-top:10px;color:#fff;}
+.cityname{width:66%;float:left;margin-left:50px;}
+.cityname span{font-size:2em;font-weight:800;}
+.city a{float:right;margin-right:50px;}
+.rain{color:#fff;margin-left:50px;}
+.tem{width:100%;height:184px;color:#fff;}
+.tem span,.tem div{float:left;}
+.tem span{width:24.8%;margin-left:50px;font-size:5em;}
+.tem div{margin-top:80px;}
+.times{color:#fff;margin-left:50px;}
+.form1{margin-left:50px;margin-top:50px;}
+.form1 input{width:50%;height:80px;padding-left:20px;float:left;border-radius:2px;background:none;color:#fff;font-size:40px;border:1px solid #999;border-right:0;}
+.form1 button{width:10%;height:84px;float:left;border-radius:2px;background:none;color:#fff;font-size:30px;border:1px solid #999;}
+#wait{position:relative;height:60%;width:100%;}
+#wait img{position:absolute;top:50%;left:50%;margin-left:-128px;margin-top:-128px;transform:rotate(0deg);animation:mymove 3s infinite;-webkit-animation:mymove 3s infinite linear;}
+@-webkit-keyframes mymove{
+	0%{-webkit-transform: rotate(0deg);}
+	5%{-webkit-transform: rotate(18deg);}
+	10%{-webkit-transform: rotate(36deg);}
+	15%{-webkit-transform: rotate(54deg);}
+	20%{-webkit-transform: rotate(72deg);}
+	25%{-webkit-transform: rotate(90deg);}
+	30%{-webkit-transform: rotate(108deg);}
+	35%{-webkit-transform: rotate(126deg);}
+	40%{-webkit-transform: rotate(144deg);}
+	45%{-webkit-transform: rotate(162deg);}
+	50%{-webkit-transform: rotate(180deg);}
+	55%{-webkit-transform: rotate(198deg);}
+	60%{-webkit-transform: rotate(216deg);}
+	65%{-webkit-transform: rotate(234deg);}
+	70%{-webkit-transform: rotate(252deg);}
+	75%{-webkit-transform: rotate(270deg);}
+	80%{-webkit-transform: rotate(288deg);}
+	85%{-webkit-transform: rotate(306deg);}
+	90%{-webkit-transform: rotate(324deg);}
+	95%{-webkit-transform: rotate(342deg);}
+	100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes mymove{
+	0%{transform: rotate(0deg);}
+	5%{transform: rotate(18deg);}
+	10%{transform: rotate(36deg);}
+	15%{transform: rotate(54deg);}
+	20%{transform: rotate(72deg);}
+	25%{transform: rotate(90deg);}
+	30%{transform: rotate(108deg);}
+	35%{transform: rotate(126deg);}
+	40%{transform: rotate(144deg);}
+	45%{transform: rotate(162deg);}
+	50%{transform: rotate(180deg);}
+	55%{transform: rotate(198deg);}
+	60%{transform: rotate(216deg);}
+	65%{transform: rotate(234deg);}
+	70%{transform: rotate(252deg);}
+	75%{transform: rotate(270deg);}
+	80%{transform: rotate(288deg);}
+	85%{transform: rotate(306deg);}
+	90%{transform: rotate(324deg);}
+	95%{transform: rotate(342deg);}
+	100%{transform: rotate(360deg);}
+}
+.week{width:100%;margin-top:30px;text-align:center;}
+.week div{width:14.28%;float:left;height:538px;position:relative;}
+.week img{margin:15px 0;}
+.one{position:absolute;bottom:0;left:0px;}
+.view{position:relative;height:538px;}
+canvas{position:absolute;left:0;bottom:50px;width:100%;height:260px;font-size:2em;}
+article{background:#909590;color:#fff;padding:80px 20px;margin-top:20px;}
+article h3{text-indent:4rem;}
+article span{font-size:1.6rem;font-weight:100;}
+/*全国天气页面*/
+.place_top{width:100%;height:105px;background:#4095d1;text-align:center;line-height:105px;color:#fff;font-size:2em;position:relative;}
+.return{position:absolute;top:19px;left:31px;width:66px;height:66px;background:url(../image/t.png) -291px -143px no-repeat;}
+.menu{position:absolute;top:20px;right:39px;width:64px;height:64px;background:url(../image/m.png) no-repeat;}
+.explain{width:100%;height:105px;background:#f5f5f5;line-height:105px;text-indent:1em;color:#259fef;}
+#searchCity{height:135px;padding-top:40px;}
+#searchCity input{width:66.4%;height:100px;background:#fff;border:1px solid #e5e5e5;padding-left:20px;font-size:50px;margin-left:40px;float:left;border-radius:2px;}
+#searchCity button{width:15.6%;height:102px;background:#259fef;color:#fff;float:left;border:0;font-size:50px;margin-left:30px;border-radius:2px;}
+.nowCity{width:100%;height:90px;background:#fff;line-height:90px;text-indent:1em;color:#666;}
+.nowCity i{color:#e97856;}
+.nowCity img{margin:0 10px;}
+.lookCity{width:100%;padding-top:20px;}
+.lookCity p,.someCity p{text-indent:1em;color:#2ea3ef;}
+#box span,.someCity span{float:left;padding:20px;color:#000;background:#fff;margin-left:50px;margin-top:30px;}
+.someCity p{margin-top:30px;}
+
+
+
